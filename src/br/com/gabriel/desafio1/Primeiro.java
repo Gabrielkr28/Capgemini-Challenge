@@ -8,15 +8,24 @@ public class Primeiro {
 
 		Scanner input = new Scanner(System.in);
 		int tamanho = input.nextInt();
-
-		String valores = "";
+		
+		
+		/*
+		 * O laço abaixo realiza o espaçamento de linhas dependendo do numero do degrau
+		 * para assim conseguir printar o icone em sua respectiva linha.
+		 * 
+		 * */
 		for (int i = 0; i < tamanho; i++) {
-			for (int j = 0; j == i - 1; j++) {
-				valores += "*";
+			for (int j = 0; j < tamanho; j++) {
+				if (j < tamanho - i - 1)
+					System.out.print(" ");
+				else
+					System.out.print("#");
 			}
-			valores += "\n";
-
+			System.out.println();
 		}
+		
+		input.close();
 
 	}
 

@@ -16,7 +16,7 @@ public class Segundo {
 
 	}
 
-	private static Integer checkString(String str) {
+	public static Integer checkString(String str) {
 		Integer count = 0;
 		char ch;
 		String specialCharactersString = "!@#$%^&*()-+";
