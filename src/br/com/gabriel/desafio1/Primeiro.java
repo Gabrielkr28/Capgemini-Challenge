@@ -15,12 +15,13 @@ public class Primeiro {
 		 * para assim conseguir printar o icone em sua respectiva linha.
 		 * 
 		 * */
+		
 		for (int i = 0; i < tamanho; i++) {
 			for (int j = 0; j < tamanho; j++) {
 				if (j < tamanho - i - 1)
 					System.out.print(" ");
 				else
-					System.out.print("#");
+					System.out.print("*");
 			}
 			System.out.println();
 		}
